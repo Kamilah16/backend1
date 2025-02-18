@@ -1,0 +1,29 @@
+{
+  "name": "backend1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "run1": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamilah16/backend1.git"
+  },
+  "author": "kamilah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamilah16/backend1/issues"
+  },
+  "homepage": "https://github.com/Kamilah16/backend1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "prettier": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
