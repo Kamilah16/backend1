@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 import express from "express";
 
-
 const db_connect=async () =>{
 
   try{
@@ -14,12 +13,5 @@ const db_connect=async () =>{
   catch(error){
     console.error("mongo db error caused ",error);
   }
-
-
-
-
-
-
-
 }
 export default db_connect;
