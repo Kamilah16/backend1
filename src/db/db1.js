@@ -13,7 +13,6 @@ const db_connect=async () =>{
   }
   catch(error){
     console.error("mongo db error caused ",error);
-
   }
 
 

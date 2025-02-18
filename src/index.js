@@ -8,11 +8,23 @@ import { connect } from "http2";
 dotenv.config()
 
 
+
+
 dotenv.config({
   path :'./env'
 })
 const app=express();
-db_connect();
+db_connect()
+.then(() =>
+  app.listen(process.env.PORT|| 3000 ,() =>{
+console.log(`listening on port ${process.env.PORT}`)
+  })
+
+)
+.catch((error) => {
+  console.log("error is ",error);
+});
+
 
 
 
